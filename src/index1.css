@@ -1,0 +1,287 @@
+@import "~antd/dist/antd.css";
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: whitesmoke;
+}
+.header {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  z-index: 1;
+  background-color: red;
+  width: 100%;
+  height: 90px;
+  background-color: #0f1921;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+.logo {
+  position: fixed;
+  height: 90px;
+  top: 0%;
+  left: 5%;
+}
+.quest {
+  position: fixed;
+  width: 80%;
+  height: 90%;
+  top: 90px;
+  color: #0f1921;
+  background-color: whitesmoke;
+}
+.right {
+  position: fixed;
+  border-left: 1px solid lightgray;
+  background-color: whitesmoke;
+  height: 90%;
+  top: 90px;
+  width: 20%;
+  left: 80%;
+}
+.innerquest {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.innerright {
+  width: 100%;
+  height: 100%;
+}
+.right-div {
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+}
+.question-section {
+  width: 100%;
+  position: relative;
+}
+
+.question-count {
+  margin-bottom: 20px;
+}
+
+.question-count span {
+  font-size: 28px;
+}
+
+.question-text {
+  margin-bottom: 12px;
+}
+.answer-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.subjective {
+  width: 90%;
+  margin-top: 10px;
+}
+.save-btn {
+  margin-top: 20%;
+  margin-left: 180%;
+  font-weight: 500;
+  border-radius: 4px;
+  height: 33px;
+  width: 140px;
+}
+.change-div {
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.change-div button {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  border-radius: 50%;
+  background-color: white;
+}
+textarea {
+  resize: none !important;
+  background-color: whitesmoke !important;
+}
+.numoq {
+  width: 100%;
+  background-color: yellowgreen;
+  height: 60px;
+  text-align: center;
+}
+.inst {
+  width: 100%;
+  background-color: rgb(218, 240, 173);
+  height: 40px;
+  font-weight: bold;
+}
+.inst:hover {
+  border: 1px solid rgb(218, 240, 173);
+  color: yellowgreen;
+}
+.right1 {
+  width: 100%;
+  background-color: white;
+  padding-top: 10px;
+  height: 38px;
+  font-size: 11px;
+  box-shadow: 0 12px 15px -8px rgba(0, 0, 0, 0.4);
+  font-weight: 500;
+  text-align: center;
+}
+.dot1 {
+  height: 11px;
+  width: 11px;
+  background-color: green;
+  border: 1px solid green;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot2 {
+  height: 11px;
+  width: 11px;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: inline-block;
+}
+@media (max-width: 1000px) {
+  .quest {
+    width: 70%;
+  }
+  .right {
+    width: 30%;
+    left: 70%;
+  }
+  .save-btn {
+    margin-left: 120%;
+  }
+}
+@media (max-height: 576px) and (min-width: 550px) {
+  .innerquest {
+    overflow-y: scroll;
+  }
+  .quest-div {
+    margin-top: 200px;
+  }
+  .save-btn {
+    margin-bottom: 100px;
+    margin-left: 70%;
+  }
+  .right-div {
+    height: 100%;
+    overflow-y: scroll;
+    padding-bottom: 200px;
+  }
+}
+@media (max-height: 340px) {
+  .quest-div {
+    margin-top: 220px;
+  }
+  .save-btn {
+    margin-bottom: 80px;
+  }
+  .numoq {
+    height: 55px;
+  }
+  .right1 {
+    font-size: 9px !important;
+    height: 35px;
+  }
+}
+@media (max-width: 576px) and (min-height: 550px) {
+  .right {
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    height: 141px;
+    border-bottom: 1px solid lightgray;
+  }
+  .header {
+    height: 70px;
+    position: fixed !important;
+    top: 0px !important;
+    z-index: 200;
+  }
+  .logo {
+    height: 70px;
+  }
+  .timersection {
+    margin-top: 20px !important;
+    font-size: 12px !important;
+  }
+  .timersection span {
+    font-size: 12px !important;
+  }
+  .quest {
+    margin-top: 121px;
+    width: 100%;
+    height: fit-content;
+    position: relative;
+  }
+  .innerquest {
+    overflow-y: scroll;
+  }
+  .quest-div {
+    margin-top: 30px;
+    width: 93% !important;
+  }
+  .numq {
+    width: 93% !important;
+  }
+  .quest-div h2 {
+    line-height: 30px !important;
+    font-size: 20px;
+  }
+  .question-count span {
+    font-size: 26px;
+  }
+  .question-text {
+    margin-top: -10px;
+  }
+  .save-btn {
+    margin-left: 40%;
+  }
+  .numoq {
+    height: 40px;
+  }
+  .numoq h2 {
+    font-size: 15px;
+  }
+  .inst {
+    height: 30px;
+  }
+  .right1 {
+    height: 30px;
+    padding-top: 6px;
+  }
+  .span1 {
+    margin-left: 50px !important;
+  }
+  .span2 {
+    margin-right: 60px !important;
+  }
+  .right-div {
+    height: 50px !important;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 100;
+    margin-top: 0px;
+    text-align: unset;
+    overflow-x: scroll !important;
+  }
+  .change-div {
+    padding: 0;
+    height: 100%;
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll !important;
+    align-items: unset;
+    justify-content: unset;
+  }
+}
